@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .mainCarouseldiv {
+    background-color: rgba(0, 0, 0, 0.877);
+    height: 700px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .mainCarouseldiv h2 {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: rgb(249, 248, 248); 
+    z-index: 1; 
+    font-size: 170px;
+    font-weight: bolder;
+    opacity: 2%;
+    mix-blend-mode: color-dodge;
+  }
+  
+  .CarouselImg {
+    width: 40%;
+    float: right;
+    height: 700px;
+    margin-right: 200px;
+    z-index: 20;
+  }
+  
+  .mainCarouselText {
+    position: absolute;
+    margin: 250px 0px 0px 150px;
+  }
+  
+  .mainCarouselText h3 {
+    color: rgb(212, 207, 207);
+  }
+  
+  .mainCarouselText h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 45px;
+  }
+  
+  .strikedText {
+    color: rgb(153, 149, 149);
+  }
+  
+  .priceText {
+    color: white;
+  }
+  
+  .carouselButton {
+    border: none;
+    background: none;
+    padding: 5px 15px;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .carousel-indicators li {
+    background-color: #ba2020;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fff;
+    opacity: 1;
+    color: red;
+  }
+  
