@@ -26,7 +26,7 @@ const HeroSlider = () => {
             <h4 className='priceText'>₹9,999 <strike className="strikedText">₹14,999</strike></h4><br />
             <button className='carouselButton'>Shop Now</button>
           </div>
-          <Carousel.Caption></Carousel.Caption>
+         
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -42,7 +42,7 @@ const HeroSlider = () => {
             <h4 className='priceText'>₹1,099 <strike className="strikedText">₹2,999</strike></h4>
             <button className='carouselButton'>Shop Now</button>
           </div>
-          <Carousel.Caption></Carousel.Caption>
+        
         </Carousel.Item>
         <Carousel.Item>
           <img
@@ -58,7 +58,7 @@ const HeroSlider = () => {
             <h4 className='priceText'>₹1,099 <strike className="strikedText">₹2,999</strike></h4>
             <button className='carouselButton'>Shop Now</button>
           </div>
-          <Carousel.Caption></Carousel.Caption>
+          
         </Carousel.Item>
       </Carousel>
       <ul className="carousel-indicators">
