@@ -50,7 +50,8 @@ function TopProducts() {
         ))}
   
         <div className='browsealllayoutcard'>
-          <p>Browse All Products <span><FontAwesomeIcon icon={faArrowRight} /></span></p>
+          <div>Browse All</div>
+          <div>Products <FontAwesomeIcon icon={faArrowRight} /></div>
         </div>
       </div>
 

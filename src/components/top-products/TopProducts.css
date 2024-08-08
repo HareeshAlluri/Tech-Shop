@@ -11,7 +11,7 @@
     justify-content: center;
     gap: 80px;
     font-size: x-large;
-    color: rgb(223, 223, 223);
+    color: rgb(226, 220, 220);
     cursor: pointer;
 }
 
@@ -73,11 +73,21 @@
     height: auto;
     border-radius: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: rgb(202, 201, 201);
+    font-size: x-large;
+    cursor: pointer;
    
 }
-.browsealllayoutcard a{
-    color: rgb(189, 182, 182);
-    font-size: x-large 
+li{
+    padding: 3px 10px;
 }
+li:hover{
+    background-color: red;
+    padding: 3px 10px;
+
+}
+
+
