@@ -4,6 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 // import TopProductsLayout from "./components/top-products/TopProductsLayout";
 import TopProducts from "./components/top-products/TopProducts";
 import Advantages from "./components/advantages/Advantages";
+import Footer from "./components/footer/Footer";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <HeroSlider />
       <TopProducts />
       <Advantages />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,53 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    background-color: black;
+    /* color: white; */
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    padding: 5px;
+    color:rgb(206, 204, 204) ;
+}
+
+/* Remove or comment out the hover effect
+footer li:hover {
+    color: aliceblue;
+}
+*/
+
+.email {
+    border: 1px solid rgb(148, 146, 146);
+    padding: 10px 230px 10px 10px;
+    background: none;
+}
+
+.subscribe {
+    background: none;
+    color: white;
+    border: none;
+    background-color: red;
+    padding: 5px 20px;
+    font-size: larger;
+}
+
+.text1 {
+    color: rgb(184, 184, 184);
+    font-weight: bolder;
+}
+.text2 li:hover{
+    color: rgb(244, 247, 246);
+    cursor: pointer;
+}
+.head{
+    height: auto;
+    background: #000;
+}
+.foot{
+    color: white;
+}

@@ -23,6 +23,14 @@
     height: 250px;
     width: 100%;
     padding: 20px;
+    
+}
+.productsImage img:hover{
+
+    
+    cursor: pointer;
+   
+
 }
 .flexGallery{
     display: flex;
@@ -30,7 +38,7 @@
     justify-content: center;
     gap: 10px;
     position: relative;
-    margin-top: 50px;
+    margin-top: 50px;   
 }
 .cards{
     border: 1px solid rgb(169, 164, 164);
@@ -79,12 +87,13 @@
     color: rgb(202, 201, 201);
     font-size: x-large;
     cursor: pointer;
+    
    
 }
 li{
     padding: 3px 10px;
 }
-li:hover{
+.filterdProducts li:hover{
     background-color: red;
     padding: 3px 10px;
 
