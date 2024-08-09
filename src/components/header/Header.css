@@ -8,6 +8,36 @@
     margin-left:30px;
     
 }
+.lens{
+    position: relative;
+    display: inline-block;
+}
+.lens button{
+    visibility: hidden;
+    width: 80px;
+    border-color: white;
+    background:none;
+    
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 4px;
+    position: absolute;
+    z-index: 1;
+    top: 120%; 
+    left: 70%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
+}
+.lens:hover button{
+    visibility: visible;
+    opacity: 1;
+}
+.lens-container{
+    /* visibility: hidden; */
+}
 a{
     text-decoration: none;
 }
@@ -25,7 +55,12 @@ header{
     position: sticky;
     top: 0%;
     z-index: 100;
+    cursor: pointer;
     
+}
+header a{
+    text-decoration: none;
+    color: white;
 }
 
 .headerIcons{

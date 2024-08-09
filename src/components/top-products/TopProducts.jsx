@@ -16,7 +16,7 @@ function TopProducts() {
   const categoryFilter = (category) => {
     const filtered = productsData.filter(product => product.category === category);
     updatedFilterProducts(filtered);
-  }
+  } 
 
   return (
     <div className='topProducts'>
@@ -59,4 +59,4 @@ function TopProducts() {
   )
 }
 
-export default TopProducts
+export default TopProducts;
