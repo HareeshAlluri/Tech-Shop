@@ -15,7 +15,8 @@ function Header() {
         <li className='lens'><FontAwesomeIcon icon={faMagnifyingGlass} />
         <div>
           <button>Search</button></div></li>
-        <li className='lens'><Link  to={"cart"} ><FontAwesomeIcon icon={faCartShopping} /></Link><button>
+        <li className='lens'><Link  to={"cart"} ><FontAwesomeIcon icon={faCartShopping} /></Link>
+        <button>
           cart</button><span className='count'></span></li>
         <li className='lens'><FontAwesomeIcon icon={faUser} />
           {/* <div className='lens-container'>

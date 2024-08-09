@@ -35,9 +35,7 @@
     visibility: visible;
     opacity: 1;
 }
-.lens-container{
-    /* visibility: hidden; */
-}
+
 a{
     text-decoration: none;
 }
@@ -55,12 +53,13 @@ header{
     position: sticky;
     top: 0%;
     z-index: 100;
-    cursor: pointer;
+    /* cursor: pointer; */
     
 }
 header a{
     text-decoration: none;
     color: white;
+    cursor:pointer;
 }
 
 .headerIcons{
@@ -74,6 +73,7 @@ header a{
 }
 li{
     color: gainsboro;
+    cursor: pointer;
 }
 .count{
     background-color: red;

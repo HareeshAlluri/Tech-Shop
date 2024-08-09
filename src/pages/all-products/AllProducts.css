@@ -1,0 +1,32 @@
+*{
+    background-color:  rgba(0, 0, 0, 0.953);
+}
+.left-side{
+   
+    width: 20%;
+    margin-top: 80px;
+    height: 500px;
+    overflow: scroll;        
+}
+.sortBy{
+    color: rgb(180, 179, 179);
+    margin: 30px;
+    
+}
+label{
+    margin-left: 10px;
+    color: rgb(180, 179, 179);
+}
+.sortBy h5{
+    font-weight:bolder;
+}
+.right-side{
+    margin-top: 80px;
+}
+/* .cont{
+    background-color: rgba(0, 0, 0, 0.891);
+} */
+.range-bar{
+    color:rgb(180, 179, 179) ;
+    margin-left: 30px;
+}
