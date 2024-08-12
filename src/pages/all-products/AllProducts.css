@@ -3,7 +3,7 @@
 }
 .left-side{
    
-    width: 15%;
+    width: 18%;
     margin-top: 80px;
     height: 600px;
     overflow:scroll;        
@@ -30,16 +30,29 @@ label{
     color:rgb(180, 179, 179) ;
     margin-left: 30px;
 }
-.sortBy dt:hover{
-    cursor: pointer;
-    color: red;
-
-}
 label, input{
     cursor: pointer;
 }
 .right-side{
     width: 80%;
+}
+
+.sortBy dt {
+    cursor: pointer;
+    color: rgb(180, 179, 179);
+}
+
+.sortBy dt:hover,
+.sortBy dt.active {
+    color: red;
+    font-weight: bold;
+}
+.clearFilter{
+    color: rgb(231, 226, 226);
+    background-color: red;
+    padding: 8px 50px;
+    margin-bottom: 10px;
+
 }
 
 

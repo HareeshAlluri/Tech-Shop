@@ -1,38 +1,81 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import "./AllProducts.css";
-import { useState } from 'react';
 import productsData from '../../components/products-data/ProductsData';
 import AllProductsLayout from './AllProductsLayout';
 
 const AllProducts = () => {
   const [filterProducts, updatedFilterProducts] = useState([]);
+  const [activeSort, setActiveSort] = useState('');
 
   const allProducts = () => {
     updatedFilterProducts([]);
+    setActiveSort('all');
   };
-  const latestProducts=()=>{
-    const latest=productsData.slice(0,6)
-    updatedFilterProducts(latest)
+  const clearedFilter=()=>{
+    updatedFilterProducts([]);
+    setActiveSort('')
   }
+  
+  const latestProducts = () => {
+    const latest = productsData.slice(0, 6);
+    updatedFilterProducts(latest);
+    setActiveSort('latest');
+  };
 
-  const categoryFilter = (category) => {
-    const filtered = productsData.filter(product => product.tag === category);
+  const categoryFilter = () => {
+    const filtered = productsData.filter(product => product.tag === "featured-product");
     updatedFilterProducts(filtered);
+    setActiveSort('category');
+  };
+  
+  const topProducts = () => {
+    const filtered = productsData.filter(product => product.rateCount === 5);
+    updatedFilterProducts(filtered);
+    setActiveSort('topRated');
+  };
+  
+  const sortingPrice = () => {
+    const sortedProducts = [...productsData].sort((a, b) => a.finalPrice - b.finalPrice);
+    updatedFilterProducts(sortedProducts);
+    setActiveSort('priceLow');
+  };
+  
+  const sortingReverse = () => {
+    const sortedProducts = [...productsData].sort((a, b) => b.finalPrice - a.finalPrice);
+    updatedFilterProducts(sortedProducts);
+    setActiveSort('priceHigh');
   };
 
   return (
     <div className='d-flex'>
       <aside className='left-side'>
         <div className='sortBy'>
+          {
+            activeSort && <button className='clearFilter' onClick={clearedFilter}>Clear Filters</button>
+          }
           <h5>Sort By</h5>
           <hr />
           <dl>
-            <dt onClick={latestProducts}>Latest</dt>
-            <dt onClick={()=>categoryFilter("featured-product")}>Featured</dt>
-            <dt>Top Rated</dt>
-            <dt>Price (Lowest First)</dt>
-            <dt>Price (Highest First)</dt>
+            <dt 
+              onClick={latestProducts} 
+              className={activeSort === 'latest' ? 'active' : ''}
+            >Latest</dt>
+            <dt 
+              onClick={categoryFilter} 
+              className={activeSort === 'category' ? 'active' : ''}
+            >Featured</dt>
+            <dt 
+              onClick={topProducts} 
+              className={activeSort === 'topRated' ? 'active' : ''}
+            >Top Rated</dt>
+            <dt 
+              onClick={sortingPrice} 
+              className={activeSort === 'priceLow' ? 'active' : ''}
+            >Price (Lowest First)</dt>
+            <dt 
+              onClick={sortingReverse} 
+              className={activeSort === 'priceHigh' ? 'active' : ''}
+            >Price (Highest First)</dt>
           </dl>
         </div>
         <div className='sortBy'>
@@ -57,14 +100,10 @@ const AllProducts = () => {
         </div>
       </aside>
       <aside className='right-side'>
-        
-          <div className="flexGallery"> 
-            {(filterProducts.length > 0 ? filterProducts : productsData).map(item => (
-              
-                <AllProductsLayout key={item.id} item={item} />
-              
-            ))}
-          
+        <div className="flexGallery"> 
+          {(filterProducts.length > 0 ? filterProducts : productsData).map(item => (
+            <AllProductsLayout key={item.id} item={item} />
+          ))}
         </div>
       </aside>
     </div>
@@ -72,4 +111,3 @@ const AllProducts = () => {
 };
 
 export default AllProducts;
-
