@@ -1,12 +1,12 @@
 import React from 'react'
-import {  IoMdStar } from 'react-icons/io';
-import "./TopProducts.css"
+import { IoMdStar } from 'react-icons/io'
+import "./AllProducts.css"
 
-function TopProductsLayout({item}) {
-  const {images, title, info, finalPrice,originalPrice, rateCount }=item
+const AllProductsLayout = ({item}) => {
+    const {images, title, info, finalPrice,originalPrice, rateCount }=item
   return (
     <>
-      <div className='cards '>
+      <div className='cards'>
         <div className='productsImage'>
           <img src={images[0]} alt="imagesss" className='product-image' />
         </div>
@@ -30,4 +30,4 @@ function TopProductsLayout({item}) {
   )
 }
 
-export default TopProductsLayout
+export default AllProductsLayout

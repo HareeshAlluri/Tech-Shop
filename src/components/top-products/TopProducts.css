@@ -19,15 +19,20 @@
     background-color: rgba(0, 0, 0, 0.877);
     padding-bottom: 50px;
 }
+.productsImage{
+    position: relative;
+    overflow: hidden;
+}
 .productsImage img{
     height: 250px;
     width: 100%;
     padding: 20px;
+    transition: transform 0.1s ease, filter 0.3s ease;
     
 }
 .productsImage img:hover{
 
-    
+    transform: scale(1.1);
     cursor: pointer;
    
 

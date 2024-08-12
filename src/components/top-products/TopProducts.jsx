@@ -7,7 +7,8 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import TopProductsLayout from './TopProductsLayout';
 import { Link } from 'react-router-dom';
 
-function TopProducts() {
+function TopProducts()
+ {
   const [filterProducts, updatedFilterProducts]= useState([]);
 
   const allProducts = () => {
