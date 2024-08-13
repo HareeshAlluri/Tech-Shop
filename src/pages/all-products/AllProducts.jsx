@@ -7,10 +7,10 @@ const AllProducts = () => {
   const [filterProducts, updatedFilterProducts] = useState([]);
   const [activeSort, setActiveSort] = useState('');
 
-  const allProducts = () => {
-    updatedFilterProducts([]);
-    setActiveSort('all');
-  };
+  // const allProducts = () => {
+  //   updatedFilterProducts([]);
+  //   setActiveSort('all');
+  // };
   const clearedFilter=()=>{
     updatedFilterProducts([]);
     setActiveSort('')
