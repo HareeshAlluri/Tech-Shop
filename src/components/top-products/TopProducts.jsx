@@ -10,38 +10,43 @@ import { Link } from 'react-router-dom';
 function TopProducts()
  {
   const [filterProducts, updatedFilterProducts]= useState([]);
+  const [activeCategory, setActiveCategory] = useState('All');
+  
 
   const allProducts = () => {
     updatedFilterProducts([]);
+    setActiveCategory('All')
+    
   };
   
   const categoryFilter = (category) => {
     const filtered = productsData.filter(product => product.category === category);
     updatedFilterProducts(filtered);
-  } 
+    setActiveCategory(category);
+  }
 
   return (
     <div className='topProducts'>
       <h3 className='topHeading'>Top Products</h3>
       <div>
         <ul className='filterdProducts'>
-        <li onClick={allProducts}>
+        <li onClick={allProducts} className={activeCategory ==='All'?'active':''}>
             All
           </li>
 
-          <li onClick={() => categoryFilter('Headphones')}>
+          <li onClick={() => categoryFilter('Headphones')} className={activeCategory==='Headphones'?'active':''} >
             Headphones
           </li>
 
-          <li onClick={() => categoryFilter('Earbuds')}>
+          <li onClick={() => categoryFilter('Earbuds')} className={activeCategory==='Earbuds'?'active':''}>
             Earbuds
           </li>
 
-          <li onClick={() => categoryFilter('Earphones')}>
+          <li onClick={() => categoryFilter('Earphones')} className={activeCategory==='Earphones'?'active':''}>
             Earphones
           </li>
 
-          <li onClick={() => categoryFilter('Neckbands')}>
+          <li onClick={() => categoryFilter('Neckbands')} className={activeCategory==='Neckbands'?'active':''}>
             Neckbands
           </li>
         </ul>

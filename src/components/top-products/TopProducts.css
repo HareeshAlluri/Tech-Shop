@@ -110,5 +110,10 @@ li{
     padding: 3px 10px;
 
 }
+.filterdProducts li.active {
+    background-color: red;
+    padding: 3px 10px;
+    color: white;
+}
 
 
