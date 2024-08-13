@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import "./AllProducts.css";
 import productsData from '../../components/products-data/ProductsData';
 import AllProductsLayout from './AllProductsLayout';
+import Advantages from '../../components/advantages/Advantages';
+import Footer from "../../components/footer/Footer"
+
 
 const AllProducts = () => {
   const [filterProducts, updatedFilterProducts] = useState([]);
@@ -47,7 +50,8 @@ const AllProducts = () => {
   };
 
   return (
-    <div className='d-flex'>
+    <>
+        <div className='d-flex'>
       <aside className='left-side'>
         <div className='sortBy'>
           {
@@ -106,7 +110,12 @@ const AllProducts = () => {
           ))}
         </div>
       </aside>
+      
     </div>
+    <Advantages />
+    <Footer />
+    </>
+
   );
 };
 
