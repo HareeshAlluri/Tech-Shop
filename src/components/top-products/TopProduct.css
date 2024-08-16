@@ -1,7 +1,38 @@
 .specifications{
-    color: white;
+    color: rgb(217, 215, 215);
 }
 .list-unstyled li{
-    border: 1px solid white;
+    border: 1px solid rgb(133, 133, 133);
     margin: 15px 40px;
+}
+.offers button{
+    color: white;
+}
+.specifications h3{
+    font-weight: bold;
+}
+.stars{
+    color: red;
+}
+.ratings{
+    font-size: large;
+}
+.first, .second, .offers, .fourth{
+    margin-bottom: 30px;
+}
+h2 pre{
+    font-weight: bold;
+}
+.second h6{
+    color: green;
+}
+.second button{
+    color: white;
+    padding: 5px;
+    background-color: green;
+    border-radius: 2px;
+}
+.offers button{
+    padding: 5px;
+    border: 1px solid rgb(167, 164, 164);
 }
