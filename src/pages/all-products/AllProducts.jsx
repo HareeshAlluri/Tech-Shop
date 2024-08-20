@@ -19,7 +19,7 @@ const AllProducts = () => {
   const latestProducts = () => {
     const latest = productsData.slice(0, 6);
     updatedFilterProducts(latest);
-    setActiveSort('latest');
+    setActiveSort('latest');  
   };
 
   const categoryFilter = () => {

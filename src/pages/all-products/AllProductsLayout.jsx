@@ -8,17 +8,22 @@ const AllProductsLayout = ({item}) => {
   return (
     <>
       <div className='cards'>
-        <Link to={`/product/${item.id}`}>
+        
         <div className='productsImage'>
+        <Link to={`/product/${item.id}`}>
           <img src={images[0]} alt="imagesss" className='product-image' />
+          </Link>
         </div>
+       
         <div className='semicard'>
           <span >
             {
               [...Array(rateCount)].map(i => <IoMdStar key={i} />)
             }
           </span>
+          <Link to={`/product/${item.id}`}>
           <h5 >{title}</h5>
+          </Link>
           <p >{info}</p>
          <hr />
           <h3>
@@ -26,7 +31,7 @@ const AllProductsLayout = ({item}) => {
           </h3>
           <button>Add to cart</button>
         </div>
-        </Link>
+        
       </div>
     </>
   )
