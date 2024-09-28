@@ -5,7 +5,8 @@ import "./TopProduct.css";
 import { IoMdStar } from 'react-icons/io';
 
 const TopProduct = () => {
-  const { id } = useParams();
+  const  {id}  = useParams();
+  console.log(id);
   const [product, setProduct] = useState(null);
   const [selectedImage, setSelectedImage] = useState('');
 
@@ -13,7 +14,7 @@ const TopProduct = () => {
     const selectedProduct = productsData.find(item => item.id === parseInt(id));
     if (selectedProduct) {
       setProduct(selectedProduct);
-      setSelectedImage(selectedProduct.images[0]); // Set the first image as default
+      setSelectedImage(selectedProduct.images[0]);  
     }
   }, [id]);
 

@@ -46,7 +46,7 @@ function TopProducts()
             Earphones
           </li>
 
-          <li onClick={() => categoryFilter('Neckbands')} className={activeCategory==='Neckbands'?'active':''}>
+          <li onClick={() => categoryFilter('Neckbands')} className={activeCategory==='Neckbands'?' ':''}>
             Neckbands
           </li>
         </ul>

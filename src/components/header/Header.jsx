@@ -3,10 +3,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faCartShopping, faUser } from '@fortawesome/free-solid-svg-icons';
 import "./Header.css";
 import { Link } from 'react-router-dom';
+// import TopProductsLayout from '../top-products/TopProductsLayout';
+import increment from "../top-products/TopProductsLayout"
 
 
-
-function Header() {
+function Header({count}) {
+  
+  console.log(count);
+  
   return (
     
     <header >    
@@ -15,7 +19,9 @@ function Header() {
         <li className='lens'><FontAwesomeIcon icon={faMagnifyingGlass} />
         <div>
           <button>Search</button></div></li>
-        <li className='lens'><Link  to={"cart"} ><FontAwesomeIcon icon={faCartShopping} /></Link>
+        <li className='lens'><Link  to={"cart"} ><FontAwesomeIcon icon={faCartShopping} />({increment})
+        </Link>
+        
         <button>
           cart</button><span className='count'></span></li>
         <li className='lens'><FontAwesomeIcon icon={faUser} />
