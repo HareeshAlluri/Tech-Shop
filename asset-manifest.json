@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tech-Shop/static/css/main.b2fdf5d7.css",
+    "main.js": "/Tech-Shop/static/js/main.a1230405.js",
+    "static/js/453.69136d6f.chunk.js": "/Tech-Shop/static/js/453.69136d6f.chunk.js",
+    "index.html": "/Tech-Shop/index.html",
+    "main.b2fdf5d7.css.map": "/Tech-Shop/static/css/main.b2fdf5d7.css.map",
+    "main.a1230405.js.map": "/Tech-Shop/static/js/main.a1230405.js.map",
+    "453.69136d6f.chunk.js.map": "/Tech-Shop/static/js/453.69136d6f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2fdf5d7.css",
+    "static/js/main.a1230405.js"
+  ]
+}
